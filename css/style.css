@@ -1,0 +1,150 @@
+body {
+    /* aqui vai zerar o margin e o padding que o body possui por padrão */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: tahoma, arial, sans-serif;
+}
+
+#principal {
+    width: 1024px;
+    margin: 20px auto;
+}
+
+.header-top {
+    height: 50px;
+    background-color: #162028;
+    /* o "relative" vai linkar com o "position: absolute"*/
+    position: relative;
+}
+
+.logotipo {
+    /* topo | direita | inferior | esquerda */
+    margin: 5px 0px 0px 135px;
+}
+
+.header-nav {
+    /* faz a classe ter uma posição absoluta e caso haja algum "position:relative" ela vai ser linkada a ele */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+/* aqui vai zerar a margin e o padding que o UL e o LI possui por padrão. */
+.header-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li {
+    /* faz com que os os blocos se quebrem em linha e não em coluna */
+    display: inline-block;
+    list-style: none;
+    /* topo | direita | inferior | esquerda */
+    margin: 0 15px 0 0;
+    padding: 13px;
+}
+
+.header-nav a {
+    color: #425564;
+    /* tirar sublinhado do link */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+    /* coloca transição nos textos ao passar o mouse por cima. */
+    transition: color .3s linear;
+}
+
+/* coloca efeito ao colocar o mouse no texto */
+.header-nav a:hover {
+    color: white;
+}
+
+.portifolio {
+    padding: 50px 100px;
+    text-align: center;
+}
+
+.portifolio h1 {
+    font-size: 36px;
+    color: #252525;
+}
+
+.portifolio p {
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+}
+
+.gallery {
+    color: #555;
+    overflow: auto;
+}
+
+.gallery-card {
+    text-align: center;
+    width: 32%;
+    float: left;
+}
+
+.gallery-tittle {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.about {
+    background-color: #003d52;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 400px;
+}
+
+.about h2 {
+    text-transform: uppercase;
+    padding: 50px 0 0 100px;
+    text-align: start;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+.about p {
+    text-align: start;
+    line-height: 1.5;
+    width: 50%;
+    padding: 0 0 0 100px;
+}
+
+#contact {
+    color: #003d52;
+    font-size: 28px;
+}
+
+#contact address {
+    text-align: center;
+    padding: 30px 0 30px 30px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 550;
+}
+
+.maps {
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+footer {
+    background-color: #0b171f;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 25px 0 0 0;
+    font-size: 13px;
+    color: #6f8597;
+    letter-spacing: 5px;
+}
